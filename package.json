@@ -1,8 +1,8 @@
 {
-  "name": "react-homework-template",
+  "name": "your-pets-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pavelpereverzev1.github.io/yourPets-project-front/",
+  "homepage": "https://yurii-corssa.github.io/your-pets-project/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@reduxjs/toolkit": "^1.9.7",
