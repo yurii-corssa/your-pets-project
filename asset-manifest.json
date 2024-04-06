@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/your-pets-project/static/js/main.c681573b.js",
+    "main.js": "/your-pets-project/static/js/main.c2dcd017.js",
     "static/js/799.df4f90e0.chunk.js": "/your-pets-project/static/js/799.df4f90e0.chunk.js",
-    "static/js/428.f17eab0f.chunk.js": "/your-pets-project/static/js/428.f17eab0f.chunk.js",
+    "static/js/545.91011cd8.chunk.js": "/your-pets-project/static/js/545.91011cd8.chunk.js",
     "static/css/761.5e503b9a.chunk.css": "/your-pets-project/static/css/761.5e503b9a.chunk.css",
     "static/js/761.1fdff51f.chunk.js": "/your-pets-project/static/js/761.1fdff51f.chunk.js",
     "static/css/72.5e503b9a.chunk.css": "/your-pets-project/static/css/72.5e503b9a.chunk.css",
     "static/js/72.a28d1346.chunk.js": "/your-pets-project/static/js/72.a28d1346.chunk.js",
-    "static/js/704.367cd04e.chunk.js": "/your-pets-project/static/js/704.367cd04e.chunk.js",
+    "static/js/391.c0334608.chunk.js": "/your-pets-project/static/js/391.c0334608.chunk.js",
     "static/js/621.cb50a7fd.chunk.js": "/your-pets-project/static/js/621.cb50a7fd.chunk.js",
     "static/js/859.5087fd8d.chunk.js": "/your-pets-project/static/js/859.5087fd8d.chunk.js",
-    "static/js/163.4648d936.chunk.js": "/your-pets-project/static/js/163.4648d936.chunk.js",
-    "static/js/699.fea98520.chunk.js": "/your-pets-project/static/js/699.fea98520.chunk.js",
+    "static/js/672.bec017fe.chunk.js": "/your-pets-project/static/js/672.bec017fe.chunk.js",
+    "static/js/603.0cd00c29.chunk.js": "/your-pets-project/static/js/603.0cd00c29.chunk.js",
     "static/js/568.d69149a6.chunk.js": "/your-pets-project/static/js/568.d69149a6.chunk.js",
     "static/js/822.2d8c4b93.chunk.js": "/your-pets-project/static/js/822.2d8c4b93.chunk.js",
     "static/js/126.82fc22c6.chunk.js": "/your-pets-project/static/js/126.82fc22c6.chunk.js",
@@ -37,24 +37,24 @@
     "static/media/sprite.svg": "/your-pets-project/static/media/sprite.cd31ba8afc797a16aeeb221258cf6b62.svg",
     "static/media/bg-mobile@1x.png": "/your-pets-project/static/media/bg-mobile@1x.3dbc8c2599d652ed7615.png",
     "index.html": "/your-pets-project/index.html",
-    "main.c681573b.js.map": "/your-pets-project/static/js/main.c681573b.js.map",
+    "main.c2dcd017.js.map": "/your-pets-project/static/js/main.c2dcd017.js.map",
     "799.df4f90e0.chunk.js.map": "/your-pets-project/static/js/799.df4f90e0.chunk.js.map",
-    "428.f17eab0f.chunk.js.map": "/your-pets-project/static/js/428.f17eab0f.chunk.js.map",
+    "545.91011cd8.chunk.js.map": "/your-pets-project/static/js/545.91011cd8.chunk.js.map",
     "761.5e503b9a.chunk.css.map": "/your-pets-project/static/css/761.5e503b9a.chunk.css.map",
     "761.1fdff51f.chunk.js.map": "/your-pets-project/static/js/761.1fdff51f.chunk.js.map",
     "72.5e503b9a.chunk.css.map": "/your-pets-project/static/css/72.5e503b9a.chunk.css.map",
     "72.a28d1346.chunk.js.map": "/your-pets-project/static/js/72.a28d1346.chunk.js.map",
-    "704.367cd04e.chunk.js.map": "/your-pets-project/static/js/704.367cd04e.chunk.js.map",
+    "391.c0334608.chunk.js.map": "/your-pets-project/static/js/391.c0334608.chunk.js.map",
     "621.cb50a7fd.chunk.js.map": "/your-pets-project/static/js/621.cb50a7fd.chunk.js.map",
     "859.5087fd8d.chunk.js.map": "/your-pets-project/static/js/859.5087fd8d.chunk.js.map",
-    "163.4648d936.chunk.js.map": "/your-pets-project/static/js/163.4648d936.chunk.js.map",
-    "699.fea98520.chunk.js.map": "/your-pets-project/static/js/699.fea98520.chunk.js.map",
+    "672.bec017fe.chunk.js.map": "/your-pets-project/static/js/672.bec017fe.chunk.js.map",
+    "603.0cd00c29.chunk.js.map": "/your-pets-project/static/js/603.0cd00c29.chunk.js.map",
     "568.d69149a6.chunk.js.map": "/your-pets-project/static/js/568.d69149a6.chunk.js.map",
     "822.2d8c4b93.chunk.js.map": "/your-pets-project/static/js/822.2d8c4b93.chunk.js.map",
     "126.82fc22c6.chunk.js.map": "/your-pets-project/static/js/126.82fc22c6.chunk.js.map",
     "516.7928a172.chunk.js.map": "/your-pets-project/static/js/516.7928a172.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c681573b.js"
+    "static/js/main.c2dcd017.js"
   ]
 }
