@@ -8,6 +8,7 @@ import { refreshUser } from 'redux/AuthSlice/operations';
 import { useAuth } from 'hooks/useAuth';
 import { GlobalStyle } from './GlobalStyles';
 import { selectCategory } from 'redux/notices/noticesSelectors';
+import LoaderGif from './LoaderGif/LoaderGif';
 
 const MainPage = lazy(() => import('pages/MainPage/MainPage'));
 const NoticesPage = lazy(() => import('pages/NoticesPage/NoticesPage'));
@@ -28,79 +29,73 @@ export const App = () => {
     dispatch(refreshUser());
   }, [dispatch]);
 
-  return (
-    !isRefreshing && (
-      <>
-        <GlobalStyle />
+  return isRefreshing ? (
+    <LoaderGif />
+  ) : (
+    <>
+      <GlobalStyle />
 
-        <Routes>
-          <Route path="/" element={<SharedLayout />}>
-            <Route index element={<MainPage />} />
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<MainPage />} />
 
-            <Route path="/news" element={<NewsPage />} />
-            <Route path="/notices" element={<NoticesPage />}>
-              <Route
-                index
-                element={<Navigate to={`${noticesCategory}`} replace />}
-              />
-              <Route path=":categoryName" element={<NoticesPage />} />
-              <Route
-                path="favorite"
-                element={
-                  <PrivateRoute
-                    redirectTo="/login"
-                    component={<NoticesPage />}
-                  />
-                }
-              />
-              <Route
-                path="own"
-                element={
-                  <PrivateRoute
-                    redirectTo="/login"
-                    component={<NoticesPage />}
-                  />
-                }
-              />
-            </Route>
-
-            <Route path="/friends" element={<OurFriendsPage />} />
-
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/notices" element={<NoticesPage />}>
             <Route
-              path="/add-pet"
+              index
+              element={<Navigate to={`${noticesCategory}`} replace />}
+            />
+            <Route path=":categoryName" element={<NoticesPage />} />
+            <Route
+              path="favorite"
               element={
-                <PrivateRoute redirectTo="/login" component={<AddPetPage />} />
+                <PrivateRoute redirectTo="/login" component={<NoticesPage />} />
               }
             />
-
             <Route
-              path="/login"
+              path="own"
               element={
-                <RestrictedRoute redirectTo="/user" component={<LoginPage />} />
+                <PrivateRoute redirectTo="/login" component={<NoticesPage />} />
               }
             />
-
-            <Route
-              path="/register"
-              element={
-                <RestrictedRoute
-                  redirectTo="/user"
-                  component={<RegisterPage />}
-                />
-              }
-            />
-
-            <Route
-              path="/user"
-              element={
-                <PrivateRoute redirectTo="/login" component={<UserPage />} />
-              }
-            />
-
-            <Route path="*" element={<NotFoundPage />} />
           </Route>
-        </Routes>
-      </>
-    )
+
+          <Route path="/friends" element={<OurFriendsPage />} />
+
+          <Route
+            path="/add-pet"
+            element={
+              <PrivateRoute redirectTo="/login" component={<AddPetPage />} />
+            }
+          />
+
+          <Route
+            path="/login"
+            element={
+              <RestrictedRoute redirectTo="/user" component={<LoginPage />} />
+            }
+          />
+
+          <Route
+            path="/register"
+            element={
+              <RestrictedRoute
+                redirectTo="/user"
+                component={<RegisterPage />}
+              />
+            }
+          />
+
+          <Route
+            path="/user"
+            element={
+              <PrivateRoute redirectTo="/login" component={<UserPage />} />
+            }
+          />
+
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </>
   );
 };

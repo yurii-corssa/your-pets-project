@@ -20,7 +20,6 @@ axiosInstance.interceptors.request.use(
     if (!timerId) {
       timerId = createRequestTimer();
     }
-    console.log(timerId);
     return config;
   },
   error => {
@@ -32,9 +31,6 @@ axiosInstance.interceptors.request.use(
 axiosInstance.interceptors.response.use(
   response => {
     clearTimeout(timerId);
-    console.log('sds');
-    console.log(timerId);
-
     return response;
   },
   error => {

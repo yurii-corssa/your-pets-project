@@ -12,9 +12,10 @@ export const LoaderContainer = styled.div`
   background: transparent;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   overflow-y: auto;
   z-index: 999;
   transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
 `;
