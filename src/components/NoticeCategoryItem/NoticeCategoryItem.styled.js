@@ -10,12 +10,14 @@ export const Item = styled.li`
   background-color: var(--white);
   border-radius: 0 0 40px 40px;
   box-shadow: var(--boxShadowDefault);
-  transform: scale(1);
   transition: box-shadow var(--transition), transform var(--transition);
 
   &:hover {
-    transform: scale(1.05);
     box-shadow: var(--boxShadowHover);
+    img {
+      scale: 1.02;
+      filter: brightness(0.7);
+    }
   }
 
   @media (min-width: 320px) {
@@ -49,7 +51,9 @@ export const ImageBlock = styled.div`
 export const Image = styled.img`
   width: 100%;
   height: 100%;
+  object-position: center;
   object-fit: cover;
+  transition: scale var(--transition), filter var(--transition);
 `;
 
 export const TextDiv = styled.div`
@@ -66,9 +70,10 @@ export const Text = styled.p`
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.64px;
-  white-space: normal;
-  text-overflow: ellipsis;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 `;
 
 export const LearnMoreDiv = styled.div``;
@@ -122,6 +127,7 @@ export const InGoodHands = styled.div`
   border-radius: 0 16px 16px 0;
   color: var(--black);
   background-color: var(--blueLight);
+  z-index: 1;
 `;
 
 export const CategoryLable = styled.p`
@@ -142,6 +148,7 @@ export const Favorite = styled.button`
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  z-index: 1;
 `;
 
 export const InfoLocation = styled.div`
@@ -159,6 +166,7 @@ export const InfoLocation = styled.div`
   border-radius: 16px;
   border: none;
   background-color: var(--blueLight);
+  z-index: 1;
 
   svg {
     width: 24px;
@@ -181,6 +189,7 @@ export const InfoAge = styled.div`
   border-radius: 16px;
   border: none;
   background-color: var(--blueLight);
+  z-index: 1;
 
   svg {
     width: 24px;
@@ -203,6 +212,7 @@ export const InfoPol = styled.div`
   border-radius: 16px;
   border: none;
   background-color: var(--blueLight);
+  z-index: 1;
 
   svg {
     width: 24px;
